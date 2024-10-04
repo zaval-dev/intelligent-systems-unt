@@ -1,3 +1,6 @@
+import cv2
+import numpy as np
+
 def enter_number():
     list = [1,2,3,4,5,6]
     while True:
@@ -9,7 +12,7 @@ def enter_number():
             return number
         except:
             print('Digite un número ENTERO válido...')
-
+            
 while True:
     option = enter_number()
     if option == 1:
