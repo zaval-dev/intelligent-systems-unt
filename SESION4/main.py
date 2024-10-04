@@ -1,22 +1,11 @@
-import cv2
-import numpy as np
-
-def enter_number():
-    list = [1,2,3,4,5,6]
-    while True:
-        try:
-            number = int(input('Selecciona una opción(1/2/3/4/5/6): '))
-            if number not in list:
-                print('El número no está dentro de los parámetros, vuelve a intentar...')
-                continue
-            return number
-        except:
-            print('Digite un número ENTERO válido...')
+import Chapter1 as ch1
+import utilities as util
             
 while True:
-    option = enter_number()
+    option = util.enter_number([1,2,3,4,5,6])
     if option == 1:
         print('Esta es la opción 1:')
+        ch1.main_file_2()
     elif option == 2:
         print('Esta es la opción 2:')
     elif option == 3:
